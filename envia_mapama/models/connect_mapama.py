@@ -11,8 +11,8 @@ import xmlrpc.client
 from odoo import models, fields, api
 
 
-class DiMapama(models.Model):
-    _inherit = 'x_dis'
+class Connect_Mapama(models.Model):
+    _name = 'ConnectMapama'
 
 
     x_di_mapama_estado = fields.Char(string="Estado Modulo Mapama")
