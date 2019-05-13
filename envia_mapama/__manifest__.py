@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
 
 {
-    'name': "develop",
+    'name': "di_mapama",
 
     'summary': """
-        Modulos develop""",
+        Modulo para enviar Di's generados al servidor de MAPAMA""",
 
     'description': """
-        develop
+        Comunicación Mapama
     """,
 
     'author': "Pedro Guirao",
@@ -17,15 +17,15 @@
     # Check https://github.com/odoo/odoo/blob/12.0/odoo/addons/base/data/ir_module_category_data.xml
     # for the full list
     'category': 'Tools',
-    'version': '0.1',
+    'version': '1.0',
 
     # any module necessary for this one to work correctly
-    'depends': ['base'],
+    'depends': ['base','x_di'],
 
     # always loaded
     'data': [
         'security/ir.model.access.csv',
-        'views/book_view.xml',
+        'views/button_view.xml',
         'views/templates.xml',
     ],
     # only loaded in demonstration mode
